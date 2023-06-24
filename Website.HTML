@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wbsite</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar
+        {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        #navbar::before
+        {
+            content: "";
+            background-color: #004C85;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+
+        #navbar #logo
+        {
+            margin: 5px 10px;
+        }
+
+        #navbar #logo img
+        {
+            height: 60px;
+            width: 60px;
+        }
+
+        #navbar ul
+        {
+            display: flex;
+        }
+
+        #navbar ul li
+        {
+            list-style: none;
+        }
+
+        #navbar ul li a
+        {
+            text-decoration: none;
+            margin: 30px 25px;
+            display: block;
+            color: #00b6ff;
+            font-size: 1.2 rem;
+            font-family: Quicksand;
+            font-weight: 700;
+        }
+
+        #home
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-image: linear-gradient(#00608c, #005953);
+            height: 87vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .para
+        {
+            background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            border-radius: 8px;
+            font-family: Quicksand;
+        }
+        .para H1
+        {
+            color: white;
+            position: relative;
+            margin: 20px 20px;
+            font-size: 60px;
+        }
+
+        .see
+        {
+            color: white;
+            position: relative;
+            margin: 20px 20px;
+            font-size: 20px;
+        }
+
+        .plus2
+        {
+            color: white;
+            position: relative;
+            margin: 20px 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="/Home.HTML">Home</a></li>
+            <li class="item"><a href="#home">Education</a></li>
+        </ul>
+    </nav>
+
+    <div id="home">
+    <div class="para">
+        <H1>Education</H1>
+        <div class="see">
+            <p>2075</p>
+            <h3>SEE</h3>
+            <p>The rising Star Boarding School</p>
+        </div>
+
+        <div class="plus2">
+            <p>2077</p>
+            <h3>+2</h3>
+            <p>Petagon Int'l College</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

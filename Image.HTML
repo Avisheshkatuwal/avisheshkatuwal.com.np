@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Animation</title>
+  <style>
+    .animation-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(145deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    border-radius: 8px;
+    align-items: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    .animation-image {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      transition: transform 10s ease-in-out; 
+    }
+
+    .para
+    {
+        font-size: 40px;
+        font-weight: 500px;
+        font-family: Poetsen One;
+    }
+    @keyframes collide {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(100px, 100px);
+      }
+      50% {
+        transform: translate(0, 0);
+      }
+      75% {
+        transform: translate(-100px, -100px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="para">
+        <p>Lionel Andrés Messi Cuccitini</p>
+    </div>
+
+  <div class="animation-container">
+    <img src="/image 1.jpg" class="animation-image" id="image 1">
+    <img src="/image 2.jpg" class="animation-image" id="image 2">
+    <img src="/image 3.jpg" class="animation-image" id="image 3">
+    <img src="/image 4.jpg" class="animation-image" id="image 4">
+    <img src="/image 5.jpg" class="animation-image" id="image 5">
+  </div>
+
+  <script>
+    const images = [
+        'image 1.jpg',
+        'image 2.jpg',
+        'image 3.jpg',
+        'image 4.jpg',
+        'image 5.jpg'
+    ];
+
+    const imageElements = document.getElementsByClassName('animation-image');
+
+    for (let i = 0; i < imageElements.length; i++) {
+      const image = imageElements[i];
+      image.style.animation = `collide ${(i + 1) * 2}s infinite linear`;
+
+      image.addEventListener('animationiteration', () => {
+        const nextImageIndex = (images.indexOf(image.src) + 1) % images.length;
+        image.src = images[nextImageIndex];
+      });
+    }
+  </script>
+</body>
+</html>

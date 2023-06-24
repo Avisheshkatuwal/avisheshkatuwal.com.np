@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.home
+{
+    background-image: linear-gradient(#3C008C, #260059);
+    height: 140vh;
+    width: 100%;
+    position: relative;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container table
+{
+    border: 1px solid black;
+    border-color: white 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+
+.tbody
+{
+    background-color: #0076a4;
+    color: white;
+}
+
+.name, .add, .dob, .gen, .mob, .course, .area, .about
+{
+    background-color: rgb(0, 119, 109);
+    color: white;
+}
+
+.intro, .buttum
+{
+    background-color: rgb(81, 119, 0);
+    color: white;
+}

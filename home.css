@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+#navbar::before
+{
+    content: "";
+    background-color: #004C85;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#navbar ul
+{
+    display: flex;
+}
+
+#navbar ul li
+{
+    list-style: none;
+}
+
+#navbar ul li a
+{
+    text-decoration: none;
+    margin: 30px 25px;
+    display: block;
+    color: #00b6ff;
+    font-size: 1.2 rem;
+    font-family: Quicksand;
+    font-weight: 700;
+}
+
+#home
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(#3C008C, #260059);
+    height: 210vh;
+    width: 100%;
+}
+
+.h-para
+{
+    color: #fff;
+    font-family: quicksand;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-para h1
+{
+    font-size: 50px;
+}
+
+.img img
+{
+    height: 300px;
+    width: 226px;
+    margin: 10px 11px;
+}
+
+.section1
+{
+    display: flex;
+    margin: 24PX 11px;
+    padding: 2px 4px;
+    align-items: center;
+    border: #fff 2px solid;
+    border-radius: 20px;
+}
+
+.a-para
+{
+    color: #fff;
+    font-family: quicksand;
+    margin: 24PX 11px;
+    padding: 2px 4px;
+}
+
+.a-para h1
+{
+    font-size: 40px;
+}
+
+.a-para2
+{
+    color: #fff;
+    font-family: quicksand;
+    margin: 24PX 11px;
+    padding: 2px 4px;
+}
+
+#avi
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p-para
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 60px 30px;
+    font-family: quicksand;
+}
+
+.p-para .btn
+{
+    margin: 2px;
+    padding: 5px 5px;
+    background-color: #0091ff;
+    border: 2px solid #1FFFEF;
+    border-radius: 10px;
+    font-family: quicksand;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.p-para .btn a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer footer
+{
+    background-color: #004C85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.link
+{
+    display: flex;
+    margin: 0px 20px;
+}
+
+.link h3 a
+{
+    text-decoration: none;
+    color: #004a63;
+}

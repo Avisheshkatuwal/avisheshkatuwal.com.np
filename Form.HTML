@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+    <div class="home">
+
+        <div class="container">
+            <table style="text-align:center">
+                <tbody class="tbody">
+                    <tr class="intro">
+                        <th colspan="2">Student Form</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form class="name">
+                              <label>Name:</label>
+                              <input type="text" placeholder="Enter your name" required="">
+                            </form>
+                        </td>
+                        <td>
+                            <form class="add">
+                                <label>Address:</label>
+                                <input type="text" placeholder="Enter your address">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <form class="gen">
+                            <label>Gender:</label>
+                            <input type="radio" value="">
+                            <label>Male</label>
+                            <input type="radio" value="">
+                            <label>Female</label>
+                          </form>
+                        </td>
+                        <td>
+                            <form class="dob">
+                                <label for="2">DOB:</label><input type="date">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form class="mob">
+                                <label for="1">Contact No:</label>
+                                <input type="number" placeholder="Enter your number">
+                            </form>
+                        </td>
+                        <td>
+                            <form class="course">
+                                <label for="2">Applied Course:</label>
+                                <select>
+                                  <option>BCA</option>
+                                  <option selected="">BSC-CSIT</option>
+                                  <option>BIT</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <form class="area">
+                                <label for="1">Area of Interest:</label><br>
+                                <input type="checkbox" value="">
+                                <label>Programming</label><br>
+                                <input type="checkbox" value="">
+                                <label>Editing</label><br>
+                                <input type="checkbox" value="">
+                                <label>Designing</label><br>
+                                <input type="checkbox" value="">
+                                <label>Content Creator</label>
+                            </form>
+                        </td>
+                        <td class="about">
+                            <form>
+                                <label>About you:</label>
+                                <textarea>
+                                </textarea>
+                            </form>
+                        </td>
+                    </tr>
+        
+                    <tr class="buttum">
+                        <td colspan="2">
+                            <form action="index.html">
+                                <button type="submit" value="submit" onclick="myfunction()">SUBMIT</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <script>
+                        function myFunction()
+                        {
+                        alert("Your form is submitted! Thank you");
+                        }
+                    </script>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
